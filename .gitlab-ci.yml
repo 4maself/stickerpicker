@@ -1,0 +1,15 @@
+image: docker:19.03.12
+
+stages:
+  - build
+
+services:
+  - docker:19.03.12-dind
+
+builder:
+  stage: build
+  tags:
+    - docker
+  script:
+    - cd web
+    - docker build -t matrix-widgets/stickerpicker
