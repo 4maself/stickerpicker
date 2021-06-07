@@ -12,4 +12,4 @@ builder:
     - docker
   script:
     - cd web
-    - docker build -t matrix-widgets/stickerpicker
+    - docker build -t matrix-widgets/stickerpicker .
