@@ -1,0 +1,10 @@
+{
+  "packs": [
+    "discord.json",
+    "panda.json",
+    "pepe.json",
+    "cat.json",
+    "random_berry.json"
+  ],
+  "homeserver_url": "https://matrix.4maself.nl"
+}
