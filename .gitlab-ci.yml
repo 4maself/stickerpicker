@@ -13,3 +13,7 @@ builder:
   script:
     - cd web
     - docker build -t matrix-widgets/stickerpicker .
+    - docker save matrix-widgets/stickerpicker -o stickerpicker.tar
+  artifacts:
+    paths:
+      - web/stickerpicker.tar
