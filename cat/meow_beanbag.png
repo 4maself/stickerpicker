@@ -1,0 +1,13 @@
+Will not apply HSTS. The HSTS database must be a regular and non-world-writable file.
+ERROR: could not open HSTS store at '/home/frank/.wget-hsts'. HSTS will be disabled.
+--2021-06-15 17:49:17--  https://emojis.slackmojis.com/emojis/images/1612849065/12419/meow_beanbag.png?1612849065
+Resolving emojis.slackmojis.com (emojis.slackmojis.com)... 104.21.25.105, 172.67.134.4, 2606:4700:3033::ac43:8604, ...
+Connecting to emojis.slackmojis.com (emojis.slackmojis.com)|104.21.25.105|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10276 (10K) [image/png]
+Saving to: ‘meow_beanbag.png?1612849065’
+
+     0K ..........                                            100% 3.08M=0.003s
+
+2021-06-15 17:49:17 (3.08 MB/s) - ‘meow_beanbag.png?1612849065’ saved [10276/10276]
+
