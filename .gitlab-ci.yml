@@ -11,9 +11,11 @@ builder:
   tags:
     - docker
   script:
+    - docker login $TOKEN_URL -u $TOKEN_USER -p $TOKEN_PASS
     - cd web
-    - docker build -t matrix-widgets/stickerpicker .
-    - docker save matrix-widgets/stickerpicker -o stickerpicker.tar
+    - docker build -t $TOKEN_URL/matrix-widgets/stickerpicker .
+    - docker save $TOKEN_URL/matrix-widgets/stickerpicker -o stickerpicker.tar
+    - docker push $TOKEN_URL/matrix-widgets/stickerpicker
   artifacts:
     paths:
       - web/stickerpicker.tar
