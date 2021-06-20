@@ -6,14 +6,25 @@ stages:
 services:
   - docker:19.03.12-dind
 
+builder-to-registry:
+  stage: build
+  tags:
+    - docker
+  script:
+    - docker login $TOKEN_URL -u $TOKEN_USER -p $TOKEN_PASS
+    - cd web
+    - docker build -t $TOKEN_URL/4maself/stickerpicker .
+    - docker push $TOKEN_URL/4maself/stickerpicker
+
+
 builder:
   stage: build
   tags:
     - docker
   script:
     - cd web
-    - docker build -t matrix-widgets/stickerpicker .
-    - docker save matrix-widgets/stickerpicker -o stickerpicker.tar
+    - docker build -t $TOKEN_URL/4maself/stickerpicker .
+    - docker save $TOKEN_URL/4maself/stickerpicker -o stickerpicker.tar
   artifacts:
     paths:
-      - web/stickerpicker.tar
+    - web/stickerpicker.tar
