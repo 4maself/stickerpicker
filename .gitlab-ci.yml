@@ -13,8 +13,8 @@ builder-to-registry:
   script:
     - docker login $TOKEN_URL -u $TOKEN_USER -p $TOKEN_PASS
     - cd web
-    - docker build -t $TOKEN_URL/matrix-widgets/stickerpicker .
-    - docker push $TOKEN_URL/matrix-widgets/stickerpicker
+    - docker build -t $TOKEN_URL/4maself/stickerpicker .
+    - docker push $TOKEN_URL/4maself/stickerpicker
 
 
 builder:
@@ -23,8 +23,8 @@ builder:
     - docker
   script:
     - cd web
-    - docker build -t $TOKEN_URL/matrix-widgets/stickerpicker .
-    - docker save $TOKEN_URL/matrix-widgets/stickerpicker -o stickerpicker.tar
+    - docker build -t $TOKEN_URL/4maself/stickerpicker .
+    - docker save $TOKEN_URL/4maself/stickerpicker -o stickerpicker.tar
   artifacts:
     paths:
     - web/stickerpicker.tar
