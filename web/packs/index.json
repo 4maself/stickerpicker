@@ -1,12 +1,12 @@
 {
   "packs": [
+    "cat.json",
+    "corgi.json",
     "discord.json",
     "panda.json",
     "pepe.json",
-    "cat.json",
-    "random_berry.json",
     "ramsay.json",
-    "corgi.json"
+    "random_berry.json"
   ],
   "homeserver_url": "https://matrix.4maself.nl"
 }
