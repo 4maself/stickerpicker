@@ -1,0 +1,13 @@
+Will not apply HSTS. The HSTS database must be a regular and non-world-writable file.
+ERROR: could not open HSTS store at '/home/frank/.wget-hsts'. HSTS will be disabled.
+--2021-10-09 16:08:05--  https://cdn.discordapp.com/emojis/894269333444915250.png
+Resolving cdn.discordapp.com (cdn.discordapp.com)... 162.159.135.233, 162.159.133.233, 162.159.130.233, ...
+Connecting to cdn.discordapp.com (cdn.discordapp.com)|162.159.135.233|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14273 (14K) [image/png]
+Saving to: ‘894269333444915250.png’
+
+     0K .......... ...                                        100% 2.70M=0.005s
+
+2021-10-09 16:08:06 (2.70 MB/s) - ‘894269333444915250.png’ saved [14273/14273]
+
