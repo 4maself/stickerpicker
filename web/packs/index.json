@@ -6,7 +6,8 @@
     "panda.json",
     "pepe.json",
     "ramsay.json",
-    "random_berry.json"
+    "random_berry.json",
+    "spongebob.json"
   ],
   "homeserver_url": "https://matrix.4maself.nl"
 }
